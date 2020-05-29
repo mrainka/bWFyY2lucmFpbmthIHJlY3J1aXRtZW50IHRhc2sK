@@ -10,6 +10,8 @@ struct WeatherSpecification {
 
     let apiRoute: APIRoute
 
+    let cacheStatus = CacheStatus.enabled(timeToLive: 600)
+
     init(cityID: Int, units: Unit) {
         apiRoute = .weather(cityID: cityID, units: units)
     }

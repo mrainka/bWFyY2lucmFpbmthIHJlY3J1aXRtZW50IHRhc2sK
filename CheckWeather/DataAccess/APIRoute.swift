@@ -31,6 +31,8 @@ enum APIRoute {
     }
 }
 
+extension APIRoute: Hashable {}
+
 extension APIRoute: URLRequestConvertible {
 
     func asURLRequest() throws -> URLRequest {

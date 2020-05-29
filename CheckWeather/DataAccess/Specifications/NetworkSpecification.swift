@@ -9,4 +9,11 @@
 protocol NetworkSpecification: Specification {
 
     var apiRoute: APIRoute { get }
+
+    var cacheStatus: CacheStatus { get }
+}
+
+extension NetworkSpecification {
+
+    var cacheStatus: CacheStatus { .disabled }
 }
