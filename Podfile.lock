@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.1.0)
   - Nimble (8.0.7)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - Nimble
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Nimble
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ff34745028b8c1742c8da14da69d712018fff5e8
+PODFILE CHECKSUM: 573d003c3005d3fd5369ad095d41446bd9b279a5
 
 COCOAPODS: 1.9.1

@@ -4,6 +4,7 @@ target 'CheckWeather' do
     use_frameworks!
 
     pod 'Alamofire'
+    pod 'SnapKit'
 
     target 'CheckWeatherTests' do
         inherit! :search_paths
