@@ -11,4 +11,13 @@ protocol Repository {
     associatedtype Item
 
     func query(_ specification: Specification, completion: @escaping (Result<Item, RepositoryError>) -> Void)
+
+    func update(_ item: Item)
+}
+
+extension Repository {
+
+    func update(_ item: Item) {
+        fatalError("Updating is not supported by the repository")
+    }
 }

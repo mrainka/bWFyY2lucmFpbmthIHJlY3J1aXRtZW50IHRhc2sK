@@ -26,6 +26,7 @@
 		16595E53248176DF0019517A /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16595E52248176DF0019517A /* CityViewModel.swift */; };
 		16595E582481785F0019517A /* UITableViewCellRegisteringAndDequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16595E572481785F0019517A /* UITableViewCellRegisteringAndDequeuing.swift */; };
 		16595E5A24817A000019517A /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16595E5924817A000019517A /* CityCell.swift */; };
+		16932B812482328B001FED95 /* CheckWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16932B7F2482328B001FED95 /* CheckWeather.xcdatamodeld */; };
 		16CD2D83248037CE00FD623A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD2D82248037CE00FD623A /* AppDelegate.swift */; };
 		16CD2D8C248037D000FD623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CD2D8B248037D000FD623A /* Assets.xcassets */; };
 		16CD2D8F248037D000FD623A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CD2D8D248037D000FD623A /* LaunchScreen.storyboard */; };
@@ -39,6 +40,8 @@
 		16D91F852480D55800E66D15 /* NetworkSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D91F842480D55800E66D15 /* NetworkSpecification.swift */; };
 		16D91F872480D61E00E66D15 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D91F862480D61E00E66D15 /* RepositoryError.swift */; };
 		16D91F892480D7CF00E66D15 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D91F882480D7CF00E66D15 /* Weather.swift */; };
+		16F529BF248246DB00E79FCA /* UnitCoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F529BE248246DB00E79FCA /* UnitCoreDataRepository.swift */; };
+		16F529C1248248EE00E79FCA /* UnitSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F529C0248248EE00E79FCA /* UnitSpecification.swift */; };
 		2CA92573B58C0229501A23BE /* Pods_CheckWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4397547B6376820F4A8A9499 /* Pods_CheckWeatherTests.framework */; };
 		CB2473C48DFB4C7C6905EA10 /* Pods_CheckWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD0E33579FFB316950FD4FE /* Pods_CheckWeather.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,7 @@
 		16595E52248176DF0019517A /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		16595E572481785F0019517A /* UITableViewCellRegisteringAndDequeuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellRegisteringAndDequeuing.swift; sourceTree = "<group>"; };
 		16595E5924817A000019517A /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		16932B802482328B001FED95 /* CheckWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckWeather.xcdatamodel; sourceTree = "<group>"; };
 		16CD2D7F248037CE00FD623A /* CheckWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CD2D82248037CE00FD623A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CD2D8B248037D000FD623A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		16D91F842480D55800E66D15 /* NetworkSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpecification.swift; sourceTree = "<group>"; };
 		16D91F862480D61E00E66D15 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		16D91F882480D7CF00E66D15 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		16F529BE248246DB00E79FCA /* UnitCoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCoreDataRepository.swift; sourceTree = "<group>"; };
+		16F529C0248248EE00E79FCA /* UnitSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSpecification.swift; sourceTree = "<group>"; };
 		2DD0E33579FFB316950FD4FE /* Pods_CheckWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4397547B6376820F4A8A9499 /* Pods_CheckWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B18737D429A53D733FE1D0 /* Pods-CheckWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-CheckWeatherTests/Pods-CheckWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,10 +127,10 @@
 		160E02B224815444002F48C5 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				160E02B92481559F002F48C5 /* WeatherSpecification.swift */,
 				16D91F882480D7CF00E66D15 /* Weather.swift */,
 				160E02B324815459002F48C5 /* WeatherCodingKeys.swift */,
 				160E02B7248154CC002F48C5 /* WeatherMainContainerGetting.swift */,
-				160E02B92481559F002F48C5 /* WeatherSpecification.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -223,13 +229,14 @@
 				16D91F752480CB1A00E66D15 /* DataAccess */,
 				1643CC182481702E008D969C /* CityList */,
 				160E02B524815486002F48C5 /* Temperature.swift */,
-				16D91F7B2480D1B900E66D15 /* Unit.swift */,
+				16F529BD248246B700E79FCA /* Unit */,
 				160E02B224815444002F48C5 /* Weather */,
 				16595E562481783E0019517A /* UserInterface */,
 				16595E46248171F80019517A /* Utilities */,
 				16CD2D8B248037D000FD623A /* Assets.xcassets */,
 				16CD2D8D248037D000FD623A /* LaunchScreen.storyboard */,
 				16CD2D90248037D000FD623A /* Info.plist */,
+				16932B7F2482328B001FED95 /* CheckWeather.xcdatamodeld */,
 			);
 			path = CheckWeather;
 			sourceTree = "<group>";
@@ -272,6 +279,16 @@
 				16D91F7E2480D39B00E66D15 /* Specification.swift */,
 			);
 			path = Specifications;
+			sourceTree = "<group>";
+		};
+		16F529BD248246B700E79FCA /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				16F529BE248246DB00E79FCA /* UnitCoreDataRepository.swift */,
+				16F529C0248248EE00E79FCA /* UnitSpecification.swift */,
+				16D91F7B2480D1B900E66D15 /* Unit.swift */,
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 		9B4C817D5A5AA6DFB0DE3075 /* Pods */ = {
@@ -498,12 +515,15 @@
 				16595E48248172220019517A /* CellReusing.swift in Sources */,
 				160E02B624815486002F48C5 /* Temperature.swift in Sources */,
 				16595E45248171930019517A /* CustomViewContaining.swift in Sources */,
+				16F529C1248248EE00E79FCA /* UnitSpecification.swift in Sources */,
+				16932B812482328B001FED95 /* CheckWeather.xcdatamodeld in Sources */,
 				160ED2C72482293B001A9875 /* Cities.swift in Sources */,
 				16D91F812480D42E00E66D15 /* AnyRepository.swift in Sources */,
 				1643CC1A24817069008D969C /* CityListView.swift in Sources */,
 				16595E582481785F0019517A /* UITableViewCellRegisteringAndDequeuing.swift in Sources */,
 				16CD2D83248037CE00FD623A /* AppDelegate.swift in Sources */,
 				16595E4F2481740A0019517A /* CityListViewModel.swift in Sources */,
+				16F529BF248246DB00E79FCA /* UnitCoreDataRepository.swift in Sources */,
 				16595E4A248172B50019517A /* WithModelConfiguring.swift in Sources */,
 				16595E512481766F0019517A /* City.swift in Sources */,
 				16595E53248176DF0019517A /* CityViewModel.swift in Sources */,
@@ -770,6 +790,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16932B7F2482328B001FED95 /* CheckWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16932B802482328B001FED95 /* CheckWeather.xcdatamodel */,
+			);
+			currentVersion = 16932B802482328B001FED95 /* CheckWeather.xcdatamodel */;
+			path = CheckWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 16CD2D77248037CE00FD623A /* Project object */;
 }

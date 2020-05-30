@@ -6,10 +6,17 @@
 //  Copyright © 2020 Marcin Rainka. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 @UIApplicationMain
 final class AppDelegate: UIResponder {
+
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "CheckWeather")
+        container.loadPersistentStores { _, _ in }
+        return container
+    }()
 
     var window: UIWindow?
 
@@ -20,6 +27,12 @@ final class AppDelegate: UIResponder {
         window.rootViewController = cityListView
         window.makeKeyAndVisible()
         self.window = window
+    }
+
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        guard context.hasChanges else { return }
+        try? context.save()
     }
 }
 
@@ -32,5 +45,9 @@ extension AppDelegate: UIApplicationDelegate {
     {
         configureWindow()
         return true
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        saveContext()
     }
 }

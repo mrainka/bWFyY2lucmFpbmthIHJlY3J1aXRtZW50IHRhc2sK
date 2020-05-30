@@ -6,7 +6,7 @@
 //  Copyright © 2020 Marcin Rainka. All rights reserved.
 //
 
-enum Unit {
+enum Unit: Int16 {
 
     case celsius, fahrenheit, kelvin
 

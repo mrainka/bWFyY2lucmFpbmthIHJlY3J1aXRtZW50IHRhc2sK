@@ -8,16 +8,22 @@
 
 struct AnyRepository<Item> {
 
-    private let onQueried: (Specification, @escaping (Result<Item, RepositoryError>) -> Void) -> Void
+    private let onQuery: (Specification, @escaping (Result<Item, RepositoryError>) -> Void) -> Void
+    private let onUpdate: (Item) -> Void
 
     init<RepositoryType: Repository>(_ repository: RepositoryType) where RepositoryType.Item == Item {
-        onQueried = repository.query
+        onQuery = repository.query
+        onUpdate = repository.update
     }
 }
 
 extension AnyRepository: Repository {
 
     func query(_ specification: Specification, completion: @escaping (Result<Item, RepositoryError>) -> Void) {
-        onQueried(specification, completion)
+        onQuery(specification, completion)
+    }
+
+    func update(_ item: Item) {
+        onUpdate(item)
     }
 }
