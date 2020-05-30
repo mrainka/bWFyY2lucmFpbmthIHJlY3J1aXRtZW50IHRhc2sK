@@ -18,13 +18,17 @@ final class AppDelegate: UIResponder {
         return container
     }()
 
+    private let repositories = Repositories(unit: .init(UnitCoreDataRepository()), weather: .init(NetworkRepository()))
+
     var window: UIWindow?
 
     private func configureWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let cityListView = CityListViewController()
-        cityListView.configure(with: .init(unitRepository: .init(UnitCoreDataRepository())))
-        window.rootViewController = UINavigationController(rootViewController: cityListView)
+        cityListView.configure(with: .init(repositories: .init(repositories)))
+        let navigatedCityListView = UINavigationController(rootViewController: cityListView)
+        navigatedCityListView.navigationBar.isTranslucent = false
+        window.rootViewController = navigatedCityListView
         window.makeKeyAndVisible()
         self.window = window
     }

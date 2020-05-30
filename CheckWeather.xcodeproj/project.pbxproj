@@ -12,6 +12,8 @@
 		160E02B8248154CC002F48C5 /* WeatherMainContainerGetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E02B7248154CC002F48C5 /* WeatherMainContainerGetting.swift */; };
 		160E02BA2481559F002F48C5 /* WeatherSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E02B92481559F002F48C5 /* WeatherSpecification.swift */; };
 		160ED2C72482293B001A9875 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED2C62482293B001A9875 /* Cities.swift */; };
+		1614653D248274F000180EE6 /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614653C248274F000180EE6 /* TemperatureView.swift */; };
+		1614653F24827C4100180EE6 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614653E24827C4100180EE6 /* WeatherView.swift */; };
 		161B19AD24815C13005DDE51 /* CacheStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B19AC24815C13005DDE51 /* CacheStatus.swift */; };
 		161B19AF248166F9005DDE51 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B19AE248166F9005DDE51 /* Cache.swift */; };
 		1643CC1A24817069008D969C /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643CC1924817069008D969C /* CityListView.swift */; };
@@ -29,6 +31,14 @@
 		16652D5D2482520D00583E15 /* UnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16652D5C2482520D00583E15 /* UnitViewModel.swift */; };
 		16652D5F2482539400583E15 /* RepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16652D5E2482539400583E15 /* RepositoryMock.swift */; };
 		16652D61248254A000583E15 /* UnitViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16652D60248254A000583E15 /* UnitViewModelTests.swift */; };
+		168C5F0224828F8500324764 /* WeatherRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F0124828F8500324764 /* WeatherRepositories.swift */; };
+		168C5F0424828FC300324764 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F0324828FC300324764 /* WeatherViewModel.swift */; };
+		168C5F072482901500324764 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F062482901500324764 /* WeatherViewController.swift */; };
+		168C5F092482906900324764 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F082482906900324764 /* Repositories.swift */; };
+		168C5F0B248290BE00324764 /* CityListRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F0A248290BE00324764 /* CityListRepositories.swift */; };
+		168C5F0E2482913200324764 /* MaxMinTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F0D2482913200324764 /* MaxMinTemperatureViewModel.swift */; };
+		168C5F102482916000324764 /* MaxMinTemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F0F2482916000324764 /* MaxMinTemperatureView.swift */; };
+		168C5F122482919900324764 /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C5F112482919900324764 /* TemperatureViewModel.swift */; };
 		16932B812482328B001FED95 /* CheckWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16932B7F2482328B001FED95 /* CheckWeather.xcdatamodeld */; };
 		16CD2D83248037CE00FD623A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD2D82248037CE00FD623A /* AppDelegate.swift */; };
 		16CD2D8C248037D000FD623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CD2D8B248037D000FD623A /* Assets.xcassets */; };
@@ -64,6 +74,8 @@
 		160E02B7248154CC002F48C5 /* WeatherMainContainerGetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainContainerGetting.swift; sourceTree = "<group>"; };
 		160E02B92481559F002F48C5 /* WeatherSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherSpecification.swift; path = ../DataAccess/Specifications/WeatherSpecification.swift; sourceTree = "<group>"; };
 		160ED2C62482293B001A9875 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		1614653C248274F000180EE6 /* TemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
+		1614653E24827C4100180EE6 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		161B19AC24815C13005DDE51 /* CacheStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStatus.swift; sourceTree = "<group>"; };
 		161B19AE248166F9005DDE51 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		1643CC1924817069008D969C /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
@@ -81,6 +93,14 @@
 		16652D5C2482520D00583E15 /* UnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewModel.swift; sourceTree = "<group>"; };
 		16652D5E2482539400583E15 /* RepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMock.swift; sourceTree = "<group>"; };
 		16652D60248254A000583E15 /* UnitViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewModelTests.swift; sourceTree = "<group>"; };
+		168C5F0124828F8500324764 /* WeatherRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositories.swift; sourceTree = "<group>"; };
+		168C5F0324828FC300324764 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		168C5F062482901500324764 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		168C5F082482906900324764 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		168C5F0A248290BE00324764 /* CityListRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListRepositories.swift; sourceTree = "<group>"; };
+		168C5F0D2482913200324764 /* MaxMinTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMinTemperatureViewModel.swift; sourceTree = "<group>"; };
+		168C5F0F2482916000324764 /* MaxMinTemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMinTemperatureView.swift; sourceTree = "<group>"; };
+		168C5F112482919900324764 /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 		16932B802482328B001FED95 /* CheckWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckWeather.xcdatamodel; sourceTree = "<group>"; };
 		16CD2D7F248037CE00FD623A /* CheckWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CD2D82248037CE00FD623A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,12 +151,26 @@
 		160E02B224815444002F48C5 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				168C5F0124828F8500324764 /* WeatherRepositories.swift */,
 				160E02B92481559F002F48C5 /* WeatherSpecification.swift */,
 				16D91F882480D7CF00E66D15 /* Weather.swift */,
 				160E02B324815459002F48C5 /* WeatherCodingKeys.swift */,
+				168C5F052482900000324764 /* View */,
+				168C5F0324828FC300324764 /* WeatherViewModel.swift */,
 				160E02B7248154CC002F48C5 /* WeatherMainContainerGetting.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		1614653B248274AD00180EE6 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				160E02B524815486002F48C5 /* Temperature.swift */,
+				1614653C248274F000180EE6 /* TemperatureView.swift */,
+				168C5F112482919900324764 /* TemperatureViewModel.swift */,
+				168C5F0C2482911200324764 /* MaxMin */,
+			);
+			path = Temperature;
 			sourceTree = "<group>";
 		};
 		161B19B0248166FE005DDE51 /* Cache */ = {
@@ -151,6 +185,7 @@
 		1643CC182481702E008D969C /* CityList */ = {
 			isa = PBXGroup;
 			children = (
+				168C5F0A248290BE00324764 /* CityListRepositories.swift */,
 				160ED2C62482293B001A9875 /* Cities.swift */,
 				16595E4B248173C60019517A /* View */,
 				16595E4E2481740A0019517A /* CityListViewModel.swift */,
@@ -206,6 +241,24 @@
 			path = UserInterface;
 			sourceTree = "<group>";
 		};
+		168C5F052482900000324764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1614653E24827C4100180EE6 /* WeatherView.swift */,
+				168C5F062482901500324764 /* WeatherViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		168C5F0C2482911200324764 /* MaxMin */ = {
+			isa = PBXGroup;
+			children = (
+				168C5F0F2482916000324764 /* MaxMinTemperatureView.swift */,
+				168C5F0D2482913200324764 /* MaxMinTemperatureViewModel.swift */,
+			);
+			path = MaxMin;
+			sourceTree = "<group>";
+		};
 		16CD2D76248037CE00FD623A = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +285,7 @@
 				16CD2D82248037CE00FD623A /* AppDelegate.swift */,
 				16D91F752480CB1A00E66D15 /* DataAccess */,
 				1643CC182481702E008D969C /* CityList */,
-				160E02B524815486002F48C5 /* Temperature.swift */,
+				1614653B248274AD00180EE6 /* Temperature */,
 				16F529BD248246B700E79FCA /* Unit */,
 				160E02B224815444002F48C5 /* Weather */,
 				16595E562481783E0019517A /* UserInterface */,
@@ -269,6 +322,7 @@
 		16D91F782480CFF500E66D15 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				168C5F082482906900324764 /* Repositories.swift */,
 				16D91F802480D42E00E66D15 /* AnyRepository.swift */,
 				16D91F822480D4D500E66D15 /* NetworkRepository.swift */,
 				16D91F792480D01400E66D15 /* Repository.swift */,
@@ -504,10 +558,17 @@
 			files = (
 				16D91F7C2480D1B900E66D15 /* Unit.swift in Sources */,
 				160E02BA2481559F002F48C5 /* WeatherSpecification.swift in Sources */,
+				168C5F122482919900324764 /* TemperatureViewModel.swift in Sources */,
+				168C5F0B248290BE00324764 /* CityListRepositories.swift in Sources */,
 				16595E5A24817A000019517A /* CityCell.swift in Sources */,
 				160E02B424815459002F48C5 /* WeatherCodingKeys.swift in Sources */,
 				161B19AF248166F9005DDE51 /* Cache.swift in Sources */,
+				1614653F24827C4100180EE6 /* WeatherView.swift in Sources */,
+				168C5F102482916000324764 /* MaxMinTemperatureView.swift in Sources */,
+				1614653D248274F000180EE6 /* TemperatureView.swift in Sources */,
+				168C5F0424828FC300324764 /* WeatherViewModel.swift in Sources */,
 				161B19AD24815C13005DDE51 /* CacheStatus.swift in Sources */,
+				168C5F0224828F8500324764 /* WeatherRepositories.swift in Sources */,
 				16D91F772480CC5900E66D15 /* APIRoute.swift in Sources */,
 				16595E432481712E0019517A /* CustomViewController.swift in Sources */,
 				16595E41248171040019517A /* CustomView.swift in Sources */,
@@ -523,6 +584,7 @@
 				160E02B624815486002F48C5 /* Temperature.swift in Sources */,
 				16595E45248171930019517A /* CustomViewContaining.swift in Sources */,
 				16F529C1248248EE00E79FCA /* UnitSpecification.swift in Sources */,
+				168C5F0E2482913200324764 /* MaxMinTemperatureViewModel.swift in Sources */,
 				16932B812482328B001FED95 /* CheckWeather.xcdatamodeld in Sources */,
 				160ED2C72482293B001A9875 /* Cities.swift in Sources */,
 				16D91F812480D42E00E66D15 /* AnyRepository.swift in Sources */,
@@ -531,7 +593,9 @@
 				16CD2D83248037CE00FD623A /* AppDelegate.swift in Sources */,
 				16595E4F2481740A0019517A /* CityListViewModel.swift in Sources */,
 				16F529BF248246DB00E79FCA /* UnitCoreDataRepository.swift in Sources */,
+				168C5F072482901500324764 /* WeatherViewController.swift in Sources */,
 				16595E4A248172B50019517A /* WithModelConfiguring.swift in Sources */,
+				168C5F092482906900324764 /* Repositories.swift in Sources */,
 				16595E512481766F0019517A /* City.swift in Sources */,
 				16595E53248176DF0019517A /* CityViewModel.swift in Sources */,
 				16D91F7A2480D01400E66D15 /* Repository.swift in Sources */,

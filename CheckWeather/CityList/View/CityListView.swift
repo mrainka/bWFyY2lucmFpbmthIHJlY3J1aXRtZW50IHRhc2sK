@@ -19,6 +19,7 @@ final class CityListView: CustomView {
     override func addSubviews() {
         let tableView = UITableView(frame: .zero)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(CityCell.self)
         addSubview(tableView)
         self.tableView = tableView
@@ -48,5 +49,12 @@ extension CityListView: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(with: city, for: indexPath)
         (cell as? CityCell)?.configure(with: city)
         return cell
+    }
+}
+
+extension CityListView: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        model?.selected(index: indexPath.row)
     }
 }

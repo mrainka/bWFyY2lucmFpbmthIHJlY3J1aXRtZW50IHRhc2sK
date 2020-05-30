@@ -36,4 +36,15 @@ final class CityListViewController: CustomViewController<CityListView> {
     }
 }
 
-extension CityListViewController: ConfigurableWithModel {}
+extension CityListViewController: ConfigurableWithModel {
+
+    func configure(with model: CityListViewModel) {
+        configureCustomView(with: model)
+
+        model.onOpenWeather = { [weak self] in
+            let view = WeatherViewController()
+            view.configure(with: $0)
+            self?.navigationController?.pushViewController(view, animated: true)
+        }
+    }
+}
