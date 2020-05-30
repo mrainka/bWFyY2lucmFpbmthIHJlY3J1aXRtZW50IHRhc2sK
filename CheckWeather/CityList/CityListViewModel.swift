@@ -10,7 +10,10 @@ struct CityListViewModel {
 
     let cities: [CityViewModel]
 
-    init(_ cities: [City] = Cities.examples) {
+    let unit: UnitViewModel
+
+    init(_ cities: [City] = Cities.examples, unitRepository: AnyRepository<Unit>) {
         self.cities = cities.map(CityViewModel.init)
+        unit = .init(repository: unitRepository)
     }
 }

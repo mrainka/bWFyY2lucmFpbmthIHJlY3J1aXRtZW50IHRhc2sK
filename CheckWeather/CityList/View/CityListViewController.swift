@@ -6,6 +6,34 @@
 //  Copyright © 2020 Marcin Rainka. All rights reserved.
 //
 
-final class CityListViewController: CustomViewController<CityListView> {}
+import UIKit
+
+final class CityListViewController: CustomViewController<CityListView> {
+
+    private func addUnitButton() {
+        navigationItem.rightBarButtonItem = .init(
+            title: "Unit",
+            style: .plain,
+            target: self,
+            action: #selector(unitClicked))
+    }
+
+    @objc private func unitClicked(_ button: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Select the unit", message: nil, preferredStyle: .actionSheet)
+
+        alert.popoverPresentationController?.barButtonItem = button
+
+        model?.unit.units.forEach { unit in
+            alert.addAction(.init(title: unit, style: .default) { [weak self] _ in self?.model?.unit.selected(unit) })
+        }
+
+        present(alert, animated: true)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addUnitButton()
+    }
+}
 
 extension CityListViewController: ConfigurableWithModel {}

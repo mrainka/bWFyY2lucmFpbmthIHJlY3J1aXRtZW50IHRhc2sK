@@ -6,9 +6,20 @@
 //  Copyright © 2020 Marcin Rainka. All rights reserved.
 //
 
-enum Unit: Int16 {
+enum Unit: Int16, CaseIterable {
 
     case celsius, fahrenheit, kelvin
+
+    var name: String {
+        switch self {
+        case .celsius:
+            return "Celsius"
+        case .fahrenheit:
+            return "Fahrenheit"
+        case .kelvin:
+            return "Kelvin"
+        }
+    }
 
     var urlParameter: String? {
         switch self {

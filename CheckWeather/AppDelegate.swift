@@ -23,8 +23,8 @@ final class AppDelegate: UIResponder {
     private func configureWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let cityListView = CityListViewController()
-        cityListView.configure(with: .init())
-        window.rootViewController = cityListView
+        cityListView.configure(with: .init(unitRepository: .init(UnitCoreDataRepository())))
+        window.rootViewController = UINavigationController(rootViewController: cityListView)
         window.makeKeyAndVisible()
         self.window = window
     }
